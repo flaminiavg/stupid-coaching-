@@ -1,0 +1,13 @@
+<%# display params question, display couch answer, link to back to the ask page %>
+<h1>Stupid Coaching</h1>
+<div class=questions>
+  <p><%=@question%></p>
+  <p>- You</p>
+</div>
+
+<div class=answers>
+  <p><%=@coach_response%></p>
+  <p>-Your coach</p>
+</div>
+
+<p><%= link_to "Ask a new question", ask_path %></p>
